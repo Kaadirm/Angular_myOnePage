@@ -1,5 +1,20 @@
 # MyOnePage
 
+node -v
+npm -v
+npm version
+npm list -g
+npm install -g @angular/cli
+ng version
+ng v
+ng new myOne-page
+cd myOne-page/
+ng serve
+ng serve --port 9999
+ng --help
+
+---
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
 
 ## Development server
