@@ -84,7 +84,7 @@
 
 ## Style CSS
 
-````sh
+```sh
 - style.css ==>
 
 /* You can add global styles to this file, and also import other style files */
@@ -94,9 +94,10 @@
 
 /* Font awesome */
 @import "font-awesome/css/font-awesome.min.css";
-
+```
 
 ## Angular Hakkında
+
 - Angular 2009 yılında Google Çalışanı Misko tarafından kendi projelerinde kullanmak üzere başlatılıyor.
 - Açık Kaynak Kodludur.
 - SPA (Single Page Application)
@@ -114,14 +115,14 @@
 - Service= Database+
 - Module= component+component ..component+ service
 
-
 ## Angular Mimarisi
+
 - Angular Html,css, .ts(compiler) => .js(interpreter) => Browser
 - TS: OOP yakındır.
 - Angular components+services+... (module)
 
-
 ## Angular Release
+
 - Angular JS (2010)
 - Angular 2
 - Angular 4 (\*\*\*)
@@ -132,14 +133,15 @@
 _2010 Angular JS_
 _2016 JavaScriptten TypeScripte geçildi_
 
+## Angular And Other Lib&Framework Release
 
-## Angular And Other Lib&Framework Realase
 - Git (2005)
 - Angular (2009)
 - React (2013)
 - Vue (2014)
 
 ## TypeScript Hakkında
+
 - Nesne yönelimli programlama yapacağımız bir dildir.
 - Compiler
 - TS= class + abstract inheritance
@@ -147,25 +149,106 @@ _2016 JavaScriptten TypeScripte geçildi_
 - TS=Nesne yönelimli bir dildir.
 
 ## Ecmascript Hakkında
+
 - JavaScript standartını oluşturur.
 - 2009 (ES5)
 - 2015 (ES6)
 
 ## Node JS Hakkında
+
 - 2009 Asenkron olarak çalışan JS'in server side olarak çalışmasına imkan sağladı.
 - Nodejs exspress, habi, meteor gibi framework yapılarıyla bir frameworktur.
 - Asenkron (multi process)
 - non-blocking
 
 ## Script
+
 npm run start
 npm run nodemon
 npm run nodemon_q
 
 ## Npm Komutları
+
 ```sh
 node -v
 npm  -v
+
+# package.json oluşturmak dikkat proje ismi:
+# 1-) küçük harflerle
+# 2-) boşluklar olmamalıdır bunun yerine (-)
+# 3-) üğşçö kullanma
+npm init
+npm init -y
+
+# package.json içindeki kütüphaneleri proje dahil etmek için kullanıyoruz.
+npm install
+npm i
+
+# local npm'e neler yüklemişim
+npm list   => LOCAL
+
+# Global npm'e neler yüklemişim
+npm list -g  => GLOCAL
+
+# Global npm'e neler yüklemişim
+# --depth=0 sadece ana yüklediğim dosyaları göster
+npm list -g --depth=0
+
+# npm Localde nereye yüklenmiş
+npm root
+
+# npm Globalde nereye yüklenmiş.
+# C:\Users\90553\AppData\Roaming\npm\node_modules
+npm root -g
+
+# SEARCH
+# npm üzerinde arama yapmak için kullanıyoruz.
+npm search express
+npm search mocha
+
+# INSTALL
+# --save (Production ortamında kurulması gerekiyor)
+npm install -g bower --save
+npm install  express --save
+npm install  express@4.18.1 --save # Semantic Version: 4.18.1
+
+# -dev (Test ortamında kurulması)
+npm install mocha --save-dev
+npm install tailwindcss -D
+
+# DELETE
+npm unistall express
+
+# UPDATE
+npm update # Bütün bağımlılıkları güncellemek
+npm update express
+
+npm doctor
+npm audit
+
+```
+
+## Nodemon
+
+```sh
+node template.js
+node template
+npm install
+
+npm search nodemon
+npm install nodemon --save
+npm install -g nodemon --save
+
+"scripts": {
+    "nodemon": "nodemon index.js",
+    "nodemon_q": "nodemon -q index.js",
+}
+
+npm run nodemon
+npm run nodemon_q
+```
+
+---
 
 ---
 
@@ -188,4 +271,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-````
+
+```
+
+```
