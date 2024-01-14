@@ -36,6 +36,43 @@
 
 ```
 
+## Angular CLI UNINSTALL (Dikkat: Keyfi olarak silmeyin.)
+
+> npm list -g
+> npm unistall -g angular/cli
+> npm cache clean  
+> npm install -g @angular/cli@latest
+
+## VS Code Plugins
+
+> Angular Essentials (Version 16)
+> Angular Language Service
+> Angular 10 Snippets - TypeScript, Html, Angular Material, ngRx, RxJS & Flex Layout
+> Angular Schematics
+
+## Angular CLI Hazır Bileşenler
+
+> ng generate component onepage-header
+>
+> ng g component onepage-header
+> ng g component onepage-main
+> ng g component onepage-footer
+>
+> ng g service onepage-service
+> ng g module onepage-module
+> ng g pipe onepage-pipeline
+> ng g directive onepage-pipeline
+> ng g interface onepage-pipeline
+> ng g enum onepage-pipeline
+
+## Angular Configuration
+
+> npm config list -l
+> npm config delete ayarAdi
+> npm update modulAdi --save-dev
+> npm uninstall modulAdi --save-dev
+> npm get ayarAdi
+
 ## Angular NPM Kurulumları
 
 - npm install bootstrap
@@ -45,8 +82,21 @@
 - npm install alertifyjs
 - npm i
 
-## Angular Hakkında
+## Style CSS
 
+````sh
+- style.css ==>
+
+/* You can add global styles to this file, and also import other style files */
+
+/* Bootstrap Ekle */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+/* Font awesome */
+@import "font-awesome/css/font-awesome.min.css";
+
+
+## Angular Hakkında
 - Angular 2009 yılında Google Çalışanı Misko tarafından kendi projelerinde kullanmak üzere başlatılıyor.
 - Açık Kaynak Kodludur.
 - SPA (Single Page Application)
@@ -64,8 +114,14 @@
 - Service= Database+
 - Module= component+component ..component+ service
 
-## Angular Release
 
+## Angular Mimarisi
+- Angular Html,css, .ts(compiler) => .js(interpreter) => Browser
+- TS: OOP yakındır.
+- Angular components+services+... (module)
+
+
+## Angular Release
 - Angular JS (2010)
 - Angular 2
 - Angular 4 (\*\*\*)
@@ -76,15 +132,14 @@
 _2010 Angular JS_
 _2016 JavaScriptten TypeScripte geçildi_
 
-## Angular Release
 
+## Angular And Other Lib&Framework Realase
 - Git (2005)
 - Angular (2009)
 - React (2013)
 - Vue (2014)
 
 ## TypeScript Hakkında
-
 - Nesne yönelimli programlama yapacağımız bir dildir.
 - Compiler
 - TS= class + abstract inheritance
@@ -92,17 +147,25 @@ _2016 JavaScriptten TypeScripte geçildi_
 - TS=Nesne yönelimli bir dildir.
 
 ## Ecmascript Hakkında
-
 - JavaScript standartını oluşturur.
 - 2009 (ES5)
 - 2015 (ES6)
 
 ## Node JS Hakkında
-
 - 2009 Asenkron olarak çalışan JS'in server side olarak çalışmasına imkan sağladı.
 - Nodejs exspress, habi, meteor gibi framework yapılarıyla bir frameworktur.
 - Asenkron (multi process)
 - non-blocking
+
+## Script
+npm run start
+npm run nodemon
+npm run nodemon_q
+
+## Npm Komutları
+```sh
+node -v
+npm  -v
 
 ---
 
@@ -125,3 +188,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+````
