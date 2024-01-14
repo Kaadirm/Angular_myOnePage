@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-onepage-main',
+  selector: 'onePage-main',
   standalone: true,
   imports: [],
   templateUrl: './onepage-main.component.html',

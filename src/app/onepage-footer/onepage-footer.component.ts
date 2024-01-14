@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-onepage-footer',
+  selector: 'onePage-footer',
   standalone: true,
   imports: [],
   templateUrl: './onepage-footer.component.html',
