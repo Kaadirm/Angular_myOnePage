@@ -1,0 +1,16 @@
+nav {
+    opacity: 0.8;
+}
+
+#back_to_top_id {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: black;
+    color: white !important;
+    border-radius: 4%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}

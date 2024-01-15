@@ -1,4 +1,4 @@
-<div id="main_id" style="margin-top: 5rem">
+<div id="main_id" class="container" style="margin-top: 5rem">
   <main>
     <!-- About start -->
     <section id="about_me_id">
@@ -49,11 +49,34 @@
     <!-- About start -->
 
     <!-- Blog start -->
-    <section id="blog_id"></section>
+    <section id="blog_id">
+      <div class="container">
+        <div class="row">
+          <!-- card -->
+          <div
+            *ngFor="let temp of blogCard"
+            class="col-sm-12 col-md-3 col-lg-4"
+          >
+            <a [href]="temp.link">
+              <div class="card mb-3">
+                <img class="card-img-top" [src]="temp.picture" alt="Title" />
+                <div class="card-body">
+                  <h4 class="card-title">{{ temp.id }}</h4>
+                  <p class="card-text">{{ temp.title }}</p>
+                  <p class="card-text">{{ temp.description }}</p>
+                  <span class="text-muted float-end">{{ temp.date }}</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- end card -->
+        </div>
+        <!--end row -->
+      </div>
+      <!--end container -->
+    </section>
     <!-- Blog start -->
 
-    <!-- Contact start -->
-    <section id="contact_id"></section>
     <!-- Contact start -->
   </main>
 </div>

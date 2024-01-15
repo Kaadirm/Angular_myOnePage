@@ -7,6 +7,7 @@ import { OnepageHeaderComponent } from './onepage-header/onepage-header.componen
 import { OnepageMainComponent } from './onepage-main/onepage-main.component';
 import { OnepageFooterComponent } from './onepage-footer/onepage-footer.component';
 import { OnepageProjectNameComponent } from './onepage-project-name/onepage-project-name.component';
+import { OnepageNavbarComponent } from './onepage-navbar/onepage-navbar.component';
 
 // Dikkat: Bütün Componentleri buraya eklemek zorundayız
 @Component({
@@ -22,7 +23,9 @@ import { OnepageProjectNameComponent } from './onepage-project-name/onepage-proj
     OnepageProjectNameComponent,
     OnepageHeaderComponent, 
     OnepageMainComponent, 
-    OnepageFooterComponent],
+    OnepageFooterComponent,
+    OnepageNavbarComponent
+  ],
 
     // Html'de bu bcomponentte kullanacağımız html dosyası
     // template: Html kullanmadan direk html kodlarını hemplate:
