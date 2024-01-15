@@ -1,6 +1,6 @@
 {
   "name": "my-one-page",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -26,7 +26,6 @@
     "express": "^4.18.2",
     "font-awesome": "^4.7.0",
     "jquery": "^3.7.1",
-    "nodemon": "^3.0.2",
     "popper": "^1.0.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
@@ -45,6 +44,8 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "nodemon": "^3.0.2",
     "typescript": "~5.2.2"
-  }
+  },
+  "proxy":"http://localhost:4444"
 }

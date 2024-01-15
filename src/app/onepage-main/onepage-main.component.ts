@@ -1,11 +1,17 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'onePage-main',
-  standalone: true,
-  imports: [],
-  templateUrl: './onepage-main.component.html',
-  styleUrl: './onepage-main.component.css'
+  // html 
+selector: 'onePage-main',
+
+standalone: true,
+imports: [],
+
+  // Html5 Url
+templateUrl: './onepage-main.component.html',
+
+  // Css3 Url
+styleUrl: './onepage-main.component.css'
 })
 export class OnepageMainComponent {
 

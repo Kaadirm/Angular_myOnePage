@@ -10,18 +10,31 @@ import { OnepageProjectNameComponent } from './onepage-project-name/onepage-proj
 
 // Dikkat: Bütün Componentleri buraya eklemek zorundayız
 @Component({
+  // Html tag'i oluşturmak
   selector: 'app-root',
+  
+  // Bu componenti tek başına kullanmanıza olanak sağlar
   standalone: true,
+
+  // Eğer Component veya Module ekliyorsanız burada olmak zorundadır.
   imports: [CommonModule, 
     RouterOutlet, 
     OnepageProjectNameComponent,
     OnepageHeaderComponent, 
     OnepageMainComponent, 
     OnepageFooterComponent],
+
+    // Html'de bu bcomponentte kullanacağımız html dosyası
+    // template: Html kullanmadan direk html kodlarını hemplate:
   templateUrl: './app.component.html',
+
+  // Css'de bu componentte kullanacağımız css dosyası
   styleUrl: './app.component.css'
 })
+
+// EXPORT: bu classı dışarda çağırmak istiyorsak
 export class AppComponent {
+  // TS(TypeScript kodlarını buraya yazabiliriz)
   name:string = "Kadir";
   surname:string = "Memişoğlu";
   projectName:string = "One Page";

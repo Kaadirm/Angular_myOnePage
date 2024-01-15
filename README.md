@@ -24,13 +24,16 @@
 > ng new one-page
 > cd one-page/
 > ng serve
-> ng serve --port 9999
+> ng serve --port 9999 0<=PORT<=65535 PORT<=1024
 > ng --help
 ```
 
 ## Proje Serve
 
 ```sh
+> npm list -g
+> npm install -g typescript
+> npm install -g @angular/cli
 > ng serve
 > ng serve --port 9999
 
@@ -41,7 +44,7 @@
 > npm list -g
 > npm unistall -g angular/cli
 > npm cache clean  
-> npm install -g @angular/cli@latest
+> npm install -g @angular/cli@latest (Angular 17)
 
 ## VS Code Plugins
 
@@ -81,6 +84,8 @@
 - npm install popper
 - npm install alertifyjs
 - npm i
+- npm update
+- npm uninstall modulAdi
 
 ## Style CSS
 
@@ -106,7 +111,7 @@
 - Angular TypeScript üzerine inşaa edilmiştir.
 - TypeScript(Microsoft)= Javascript + ES5
 - Az kod yaz, çok iş yap.
-- JavaScript frameworkudur.
+- Angular, JavaScript frameworkudur.
 - Modüler bir yapıya sahiptir.
 - MVC mantığına göre çalışıyor.
 - Cross Platform
@@ -160,6 +165,7 @@ _2016 JavaScriptten TypeScripte geçildi_
 - Nodejs exspress, habi, meteor gibi framework yapılarıyla bir frameworktur.
 - Asenkron (multi process)
 - non-blocking
+- Google V8 Engine
 
 ## Script
 
@@ -231,6 +237,8 @@ npm audit
 ## Nodemon
 
 ```sh
+Nodemon: Node Monitoring
+
 node template.js
 node template
 npm install
