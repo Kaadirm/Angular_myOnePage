@@ -8,5 +8,16 @@ import { Component } from '@angular/core';
   styleUrl: './onepage-footer.component.css'
 })
 export class OnepageFooterComponent {
+  // Field
 
+  // Constructor
+
+  constructor(){
+    console.log("One Page Footer Component");
+  }
+
+  // Method
+  newDateData():string{
+    return String(new Date().getFullYear())
+  }
 }
