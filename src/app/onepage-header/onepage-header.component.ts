@@ -21,9 +21,27 @@ import { Component } from '@angular/core';
 export class OnepageHeaderComponent {
   homePage: string = "Anasayfa 44";
 
-  //isLoıgin: boolean = true;
-
   // navBar adında bir obje oluşturunuz.
   // Logo(string), link(string), search, attribute oluşturuyorsunuz.
   // Link (dizi)
-}
+  // navBar:{} = {}
+  navBar: {
+    isLogin: boolean,
+    navbar:Array<any>,
+    search:{}
+  } = {
+    isLogin: true,
+        //Anasayfa,AboutMe,Blog,Contact  name: Anasayfa, link: http://, fontAwesome
+    navbar:[
+      {id:1,name:"Anasayfa",link:"/",fontAwesome:"fa-solid fa-house-chimney"},
+      {id:2,name:"AboutMe",link:"/about-me",fontAwesome:"font-2"},
+      {id:3,name:"Blog",link:"/blog",fontAwesome:"font-3"},
+      {id:4,name:"Contact",link:"/contact",fontAwesome:"font-4"},
+    ],
+    search: {
+      name: "Search",
+      placeholder: "Search",
+      type: "text",
+    }
+  }; //navbar Object
+} //end OnepageHeaderComponent
