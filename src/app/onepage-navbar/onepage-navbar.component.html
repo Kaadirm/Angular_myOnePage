@@ -6,8 +6,8 @@
     <!-- <a class="navbar-brand" href="#">{{navBar.logo.logoName}}</a> -->
 
     <a class="navbar-brand" href="#">
-      <!-- {{ navBar.logo.logoName }} -->
-      <!-- <img class="rounded-circle w-25" [src]="navBar.logo.logoPicture" alt="" /> -->
+      <!-- {{navBar.logo.logoName}} -->
+      <!-- <img class="rounded-circle w-25" [src]="navBar.logo.logoPicture" alt=""> -->
       <i [class]="navBar.logo.logoFontAwesome"></i>
     </a>
     <button
@@ -30,7 +30,7 @@
             aria-current="page"
           >
             <!-- {{homePage}} -->
-            <!-- {{ navBar.navbar[0].name }} - -->
+            <!-- {{navBar.navbar[0].name}}  -->
             <!-- Property Binding Yapalım -->
             <!-- <i class={{navBar.navbar[0].fontAwesome}}></i>  -->
             <i [class]="navBar.navbar[0].fontAwesome"></i>
@@ -47,12 +47,29 @@
             {{ navBar.navbar[2].name }}
           </a>
         </li>
+
         <li class="nav-item">
           <a class="nav-link" href="{{ navBar.navbar[3].link }}">
             {{ navBar.navbar[3].name }}
           </a>
         </li>
-        <!-- <li class="nav-item dropdown">
+
+        <!-- Eğer kullanıcı sisteme giriş yapmışsa Login/Register Görünmesin -->
+        <ng-container *ngIf="navBar.isLogin; then loggedInd; else loggedOut">
+        </ng-container>
+
+        <!-- Eğer login:true ise Kullanıcı bigileri -->
+        <ng-template #loggedInd>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Hoşgeldiniz, {{ User[0].username }}
+            </a>
+          </li>
+        </ng-template>
+
+        <!-- Eğer login:false ise login/register görünsün -->
+        <ng-template #loggedOut>
+          <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -60,19 +77,22 @@
               data-bs-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-              >Dropdown</a
+              >Login</a
             >
             <div class="dropdown-menu" aria-labelledby="dropdownId">
-              <a class="dropdown-item" href="#">Action 1</a>
-              <a class="dropdown-item" href="#">Action 2</a>
+              <a class="dropdown-item" href="#">Login</a>
+              <a class="dropdown-item" href="#">Register</a>
             </div>
-          </li> -->
+          </li>
+        </ng-template>
       </ul>
       <form class="d-flex my-2 my-lg-0">
-        <input class="form-control me-sm-2" type="text" placeholder="Search" />
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-          Search
-        </button>
+        <input
+          class="form-control me-sm-2"
+          type="text"
+          [placeholder]="navBar.search.placeholder"
+        />
+        <button [class]="navBar.search.style" type="submit">Search</button>
       </form>
     </div>
   </div>

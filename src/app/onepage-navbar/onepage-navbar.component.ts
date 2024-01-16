@@ -1,14 +1,61 @@
+import { User } from './User';
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'onePage-navbar',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './onepage-navbar.component.html',
   styleUrl: './onepage-navbar.component.css'
 })
 export class OnepageNavbarComponent {
   homePage: string = "Anasayfa 44";
+
+  // user objemiz olsun ve türü User classında;
+  // username, email, password bilgileri yer alsın
+  // username: KadirM, email: kadir@gmail.com, password: 123456 bilgileri yer alsın
+  username: string = "Kadir Memişoğlu";
+
+  /*
+    id: number;
+    username: string;
+    email: string;
+    password: string;
+    pictures: string;
+    date: string;
+    link: string;
+  */
+
+  User: User[] = [
+    {
+      id: 1,
+      username: "Kadir Memişoğlu",
+      email: "kadir@gmail.com",
+      password: "12345",
+      pictures: 'https://cdn.pixabay.com/photo/2014/12/27/15/40/office-581131_1280.jpg',
+      date: String(new Date().getFullYear()),
+      link: "https://admin1/"
+    },
+    {
+      id: 2,
+      username: "writer1",
+      email: "writer@gmail.com",
+      password:'123456',
+      pictures:'https://cdn.pixabay.com/photo/2014/12/27/15/40/office-581131_1280.jpg',
+      date:String(new Date().getFullYear()),
+      link:'https://writer1/',
+    },
+    {
+      id:3,
+      username:'user1',
+      email:'huser1@gmail.com',
+      password:'123456',
+      pictures:'https://cdn.pixabay.com/photo/2014/12/27/15/40/office-581131_1280.jpg',
+      date:String(new Date().getFullYear()),
+      link:'https://user1/',
+    }
+  ];
 
   // navBar adında bir obje oluşturunuz.
   // Logo(string), link(string), search, attribute oluşturuyorsunuz.
@@ -51,7 +98,7 @@ export class OnepageNavbarComponent {
       name: "Search",
       placeholder: "Search",
       type: "text",
-      style: "btn"
+      style: "btn btn-primary",
     }
   }; //navbar Object
 } //end OnepageHeaderComponent
