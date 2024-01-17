@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
 
 // BlogCard Ekledim
 import { BlogCard } from './BlogCard';
+import { OnePageContent } from './OnePageContent';
 @Component({
   // html Template
 selector: 'onePage-main',
@@ -23,8 +24,12 @@ templateUrl: './onepage-main.component.html',
 styleUrl: './onepage-main.component.css'
 })
 export class OnepageMainComponent {
-// Field
-  isLoggedIn = true;
+  // Field
+  onePageContent:OnePageContent[]=[
+    {id:1,title:"about"},
+    {id:2,title:"blog"},
+    {id:3,title:"contact"},
+  ];
   // 1.YOL
   // blogCard: any[] = [
 
