@@ -24,7 +24,7 @@ styleUrl: './onepage-main.component.css'
 })
 export class OnepageMainComponent {
 // Field
-
+  isLoggedIn = true;
   // 1.YOL
   // blogCard: any[] = [
 

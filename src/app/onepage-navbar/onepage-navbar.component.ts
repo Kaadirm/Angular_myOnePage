@@ -1,4 +1,4 @@
-import { User } from './User';
+import { Useri userRolles } from './User';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
