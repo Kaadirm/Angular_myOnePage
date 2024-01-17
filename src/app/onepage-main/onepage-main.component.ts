@@ -9,26 +9,27 @@ import { BlogCard } from './BlogCard';
 import { OnePageContent } from './OnePageContent';
 @Component({
   // html Template
-selector: 'onePage-main',
+  selector: 'onePage-main',
 
-// Bu component tek başına çalışsın
-standalone: true,
+  // Bu component tek başına çalışsın
+  standalone: true,
 
-// import modülümüz
-imports: [CommonModule],
+  // import modülümüz
+  imports: [CommonModule],
 
   // Html5 Url
-templateUrl: './onepage-main.component.html',
+  templateUrl: './onepage-main.component.html',
 
   // Css3 Url
-styleUrl: './onepage-main.component.css'
+  styleUrl: './onepage-main.component.css'
 })
 export class OnepageMainComponent {
   // Field
-  onePageContent:OnePageContent[]=[
-    {id:1,title:"about"},
-    {id:2,title:"blog"},
-    {id:3,title:"contact"},
+  onePageContent: OnePageContent[] = [
+    { id: 1, title: "my work" },
+    { id: 2, title: "about" },
+    { id: 3, title: "blog" },
+    { id: 4, title: "contact" },
   ];
   // 1.YOL
   // blogCard: any[] = [
