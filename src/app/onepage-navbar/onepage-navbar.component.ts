@@ -92,14 +92,14 @@ export class OnepageNavbarComponent {
     },
         //Anasayfa,AboutMe,Blog,Contact  name: Anasayfa, link: http://, fontAwesome
     navbar:[
-      {id:1, name:"Anasayfa", link:"/", fontAwesome:"fa-solid fa-house-chimney"},
-      {id:2, name:"AboutMe", link:"/about-me", fontAwesome:"font-2"},
-      {id:3, name:"Blog", link:"/blog", fontAwesome:"font-3"},
-      {id:4, name:"Contact", link:"/contact", fontAwesome:"font-4"},
+      {id:1, name:"anasayfa", link:"/", fontAwesome:"fa-solid fa-house-chimney"},
+      {id:2, name:"about", link:"/about-me", fontAwesome:"font-2"},
+      {id:3, name:"blog", link:"/blog", fontAwesome:"font-3"},
+      {id:4, name:"contact", link:"/contact", fontAwesome:"font-4"},
     ],
     search: {
-      name: "Search",
-      placeholder: "Search",
+      name: "search",
+      placeholder: "Arama için",
       type: "text",
       style: "btn btn-primary",
     }
