@@ -1,6 +1,8 @@
+// Import
 import { User, userRolles } from './User';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 // Component
 @Component({
@@ -11,7 +13,7 @@ import { Component } from '@angular/core';
   standalone: true,
 
   // Projeye import edilecek alan
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
 
   // Html Template
   templateUrl: './onepage-navbar.component.html',
@@ -111,9 +113,10 @@ export class OnepageNavbarComponent {
         type: "text",
         style: "btn btn-primary",
       }
-    }; //navbar Object
+    }; //end navBar Object
 
   // Constructor
+  constructor() { }
 
   //Method
 

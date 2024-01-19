@@ -24,7 +24,11 @@
 > ng new one-page
 > cd one-page/
 > ng serve
+> ng serve --open
+> ng serve -o
 > ng serve --port 9999 0<=PORT<=65535 PORT<=1024
+> ng serve --open --port 9999
+> ng serve -o --port 9999
 > ng --help
 ```
 

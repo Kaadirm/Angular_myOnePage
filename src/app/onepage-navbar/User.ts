@@ -44,7 +44,7 @@ abstract class Person {
 
 // INTERFACE
 
-// User
+// User (Extends)
 export class User extends Person {
     // Field
     // rolles:Array<any>;
