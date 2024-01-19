@@ -1,19 +1,16 @@
 // Common Module
 import { CommonModule } from '@angular/common';
-
-// Router Link
-import { RouterLink } from '@angular/router';
-
 // Component Core
 import { Component } from '@angular/core';
-
+// Router Link
+import { RouterLink } from '@angular/router';
 // BlogCard Ekledim
 import { BlogCard } from './BlogCard';
 import { OnePageContent } from './OnePageContent';
-import { BusinessCard } from './BusinessCard';
+
 @Component({
   // Html Selector Template
-  selector: 'onePage-main',
+  selector: 'app-onepage-main',
 
   // Bu component tek başına çalışsın
   standalone: true,
@@ -21,82 +18,20 @@ import { BusinessCard } from './BusinessCard';
   // import modülümüz
   imports: [CommonModule, RouterLink],
 
-  // Html5 Url
+  // Html Url
   templateUrl: './onepage-main.component.html',
 
-  // Css3 Url
-  styleUrl: './onepage-main.component.css'
+  // Css Url
+  styleUrl: './onepage-main.component.css',
 })
 export class OnepageMainComponent {
   // Field
-
-  // Section Title
   onePageContent: OnePageContent[] = [
-    { id: 1, title: "my work" },
-    { id: 2, title: "about" },
-    { id: 3, title: "blog" },
-    { id: 4, title: "contact" },
+    { id: 1, title: 'my work' },
+    { id: 2, title: 'about' },
+    { id: 3, title: 'blog' },
+    { id: 4, title: 'contact' },
   ];
-
-
-
-  // My Work
-  businessCard: BusinessCard[] = [
-    {
-      id: 1,
-      title: 'Frontend',
-      text: 'Frontend Loremsed Nam Excepturi At Voluptatem, Unde, Atque Sunt Expedita Fuga Recusandae Facere Provident, Illo Quibusdam Nihil Quod Culpa Deserunt Quos A Reprehenderit Est Sequi Blanditiis Dolorum? Sed!',
-      description: 'Description-1',
-      icon: 'fa-solid fa-bolt text-primary',
-      date: String(new Date().getFullYear()),
-      link: 'https://deneme1/',
-    },
-    {
-      id: 2,
-      title: 'Backend',
-      text: 'Frontend Loremsed Nam Excepturi At Voluptatem, Unde, Atque Sunt Expedita Fuga Recusandae Facere Provident, Illo Quibusdam Nihil Quod Culpa Deserunt Quos A Reprehenderit Est Sequi Blanditiis Dolorum? Sed!',
-      description: 'Description-1',
-      icon: 'fa-solid fa-mug-hot text-danger',
-      date: String(new Date().getFullYear()),
-      link: 'https://deneme1/',
-    },
-    {
-      id: 3,
-      title: 'Database',
-      text: 'Frontend Loremsed Nam Excepturi At Voluptatem, Unde, Atque Sunt Expedita Fuga Recusandae Facere Provident, Illo Quibusdam Nihil Quod Culpa Deserunt Quos A Reprehenderit Est Sequi Blanditiis Dolorum? Sed!',
-      description: 'Description-1',
-      icon: 'fa-solid fa-pencil',
-      date: String(new Date().getFullYear()),
-      link: 'https://deneme1/',
-    },
-    {
-      id: 4,
-      title: 'Frontend',
-      text: 'Frontend Loremsed Nam Excepturi At Voluptatem, Unde, Atque Sunt Expedita Fuga Recusandae Facere Provident, Illo Quibusdam Nihil Quod Culpa Deserunt Quos A Reprehenderit Est Sequi Blanditiis Dolorum? Sed!',
-      description: 'Description-1',
-      icon: 'fa-solid fa-bolt text-primary',
-      date: String(new Date().getFullYear()),
-      link: 'https://deneme1/',
-    },
-    {
-      id: 5,
-      title: 'Frontend',
-      text: 'Frontend Loremsed Nam Excepturi At Voluptatem, Unde, Atque Sunt Expedita Fuga Recusandae Facere Provident, Illo Quibusdam Nihil Quod Culpa Deserunt Quos A Reprehenderit Est Sequi Blanditiis Dolorum? Sed!',
-      description: 'Description-1',
-      icon: 'fa-solid fa-bolt text-primary',
-      date: String(new Date().getFullYear()),
-      link: 'https://deneme1/',
-    },
-    {
-      id: 6,
-      title: 'Frontend',
-      text: 'Frontend Loremsed Nam Excepturi At Voluptatem, Unde, Atque Sunt Expedita Fuga Recusandae Facere Provident, Illo Quibusdam Nihil Quod Culpa Deserunt Quos A Reprehenderit Est Sequi Blanditiis Dolorum? Sed!',
-      description: 'Description-1',
-      icon: 'fa-solid fa-bolt text-primary',
-      date: String(new Date().getFullYear()),
-      link: 'https://deneme1/',
-    },
-  ]
 
   // 1.YOL
   // blogCard: any[] = [
@@ -105,67 +40,89 @@ export class OnepageMainComponent {
   blogCard: BlogCard[] = [
     {
       id: 1,
-      title: 'Blog Frontend Kullanımı',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, incidunt? Magnam quas optio sit expedita pariatur repudiandae recusandae porro cumque delectus laudantium quis, fugiat, deleniti praesentium beatae officia consequatur architecto? Nesciunt reiciendis culpa in sunt laudantium ipsum fugiat non sed asperiores atque eveniet illum, natus provident placeat veniam? Nesciunt reiciendis mollitia iusto ea excepturi quas, minima consequuntur aliquam repudiandae omnis? Dicta, placeat. Placeat, eius alias. Aspernatur eius harum expedita officia molestias explicabo iure, quos earum asperiores velit incidunt nostrum exercitationem nobis perferendis ipsum quidem eaque nam est nemo repellat unde.',
+      header: 'frontend-1',
+      title: 'Title-1',
+      text: 'frontend-1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptate error tempore officia unde! Ut dignissimos consequatur, minus quasi, suscipit, voluptate corporis debitis ab tempore perferendis alias? Sint, porro aspernatur! Ipsum possimus nobis non perspiciatis nesciunt pariatur quia quos. Vel, ipsa, modi cumque possimus enim provident dolorum perferendis praesentium commodi itaque a dolorem recusandae ea voluptatem odio, esse aliquid nostrum. Molestias cupiditate blanditiis ut sequi velit corporis deserunt reprehenderit a voluptatem accusantium, modi dicta provident iure corrupti hic vitae. Dolorem illo perferendis omnis asperiores dignissimos neque quos, natus repellat voluptatum.',
       description: 'Description-1',
       picture:
         'https://cdn.pixabay.com/photo/2014/12/27/15/40/office-581131_1280.jpg',
       date: String(new Date()),
-      link: 'https://deneme1/',
+      link: 'blog',
+      categoryName:"frontend"
     },
     {
       id: 2,
-      title: 'Blog Backend Kullanımı',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, incidunt? Magnam quas optio sit expedita pariatur repudiandae recusandae porro cumque delectus laudantium quis, fugiat, deleniti praesentium beatae officia consequatur architecto? Nesciunt reiciendis culpa in sunt laudantium ipsum fugiat non sed asperiores atque eveniet illum, natus provident placeat veniam? Nesciunt reiciendis mollitia iusto ea excepturi quas, minima consequuntur aliquam repudiandae omnis? Dicta, placeat. Placeat, eius alias. Aspernatur eius harum expedita officia molestias explicabo iure, quos earum asperiores velit incidunt nostrum exercitationem nobis perferendis ipsum quidem eaque nam est nemo repellat unde.',
+      header: 'backend-1',
+      title: 'Title-2',
+      text: 'backend-1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptate error tempore officia unde! Ut dignissimos consequatur, minus quasi, suscipit, voluptate corporis debitis ab tempore perferendis alias? Sint, porro aspernatur! Ipsum possimus nobis non perspiciatis nesciunt pariatur quia quos. Vel, ipsa, modi cumque possimus enim provident dolorum perferendis praesentium commodi itaque a dolorem recusandae ea voluptatem odio, esse aliquid nostrum. Molestias cupiditate blanditiis ut sequi velit corporis deserunt reprehenderit a voluptatem accusantium, modi dicta provident iure corrupti hic vitae. Dolorem illo perferendis omnis asperiores dignissimos neque quos, natus repellat voluptatum.',
       description: 'Description-2',
       picture:
         'https://cdn.pixabay.com/photo/2014/12/27/15/40/office-581131_1280.jpg',
       date: String(new Date()),
-      link: 'https://deneme2/',
+      link: 'blog',
+      categoryName:"backend"
     },
     {
       id: 3,
-      title: 'Blog Database Kullanımı',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, incidunt? Magnam quas optio sit expedita pariatur repudiandae recusandae porro cumque delectus laudantium quis, fugiat, deleniti praesentium beatae officia consequatur architecto? Nesciunt reiciendis culpa in sunt laudantium ipsum fugiat non sed asperiores atque eveniet illum, natus provident placeat veniam? Nesciunt reiciendis mollitia iusto ea excepturi quas, minima consequuntur aliquam repudiandae omnis? Dicta, placeat. Placeat, eius alias. Aspernatur eius harum expedita officia molestias explicabo iure, quos earum asperiores velit incidunt nostrum exercitationem nobis perferendis ipsum quidem eaque nam est nemo repellat unde.',
+      header: 'database',
+      title: 'Title-3',
+      text: 'database Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptate error tempore officia unde! Ut dignissimos consequatur, minus quasi, suscipit, voluptate corporis debitis ab tempore perferendis alias? Sint, porro aspernatur! Ipsum possimus nobis non perspiciatis nesciunt pariatur quia quos. Vel, ipsa, modi cumque possimus enim provident dolorum perferendis praesentium commodi itaque a dolorem recusandae ea voluptatem odio, esse aliquid nostrum. Molestias cupiditate blanditiis ut sequi velit corporis deserunt reprehenderit a voluptatem accusantium, modi dicta provident iure corrupti hic vitae. Dolorem illo perferendis omnis asperiores dignissimos neque quos, natus repellat voluptatum.',
       description: 'Description-3',
       picture:
         'https://cdn.pixabay.com/photo/2014/12/27/15/40/office-581131_1280.jpg',
       date: String(new Date()),
-      link: 'https://deneme3/',
+      link: 'blog',
+      categoryName:"database"
     },
     {
       id: 4,
-      title: 'Blog Webservices Kullanımı',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, incidunt? Magnam quas optio sit expedita pariatur repudiandae recusandae porro cumque delectus laudantium quis, fugiat, deleniti praesentium beatae officia consequatur architecto? Nesciunt reiciendis culpa in sunt laudantium ipsum fugiat non sed asperiores atque eveniet illum, natus provident placeat veniam? Nesciunt reiciendis mollitia iusto ea excepturi quas, minima consequuntur aliquam repudiandae omnis? Dicta, placeat. Placeat, eius alias. Aspernatur eius harum expedita officia molestias explicabo iure, quos earum asperiores velit incidunt nostrum exercitationem nobis perferendis ipsum quidem eaque nam est nemo repellat unde.',
+      header: 'webservis',
+      title: 'Title-4',
+      text: 'webservis Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptate error tempore officia unde! Ut dignissimos consequatur, minus quasi, suscipit, voluptate corporis debitis ab tempore perferendis alias? Sint, porro aspernatur! Ipsum possimus nobis non perspiciatis nesciunt pariatur quia quos. Vel, ipsa, modi cumque possimus enim provident dolorum perferendis praesentium commodi itaque a dolorem recusandae ea voluptatem odio, esse aliquid nostrum. Molestias cupiditate blanditiis ut sequi velit corporis deserunt reprehenderit a voluptatem accusantium, modi dicta provident iure corrupti hic vitae. Dolorem illo perferendis omnis asperiores dignissimos neque quos, natus repellat voluptatum.',
       description: 'Description-4',
       picture:
         'https://cdn.pixabay.com/photo/2014/12/27/15/40/office-581131_1280.jpg',
       date: String(new Date()),
-      link: 'https://deneme4/',
+      link: 'blog',
+      categoryName:"webservis"
     },
     {
       id: 5,
-      title: 'Blog Frontend Kullanımı',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, incidunt? Magnam quas optio sit expedita pariatur repudiandae recusandae porro cumque delectus laudantium quis, fugiat, deleniti praesentium beatae officia consequatur architecto? Nesciunt reiciendis culpa in sunt laudantium ipsum fugiat non sed asperiores atque eveniet illum, natus provident placeat veniam? Nesciunt reiciendis mollitia iusto ea excepturi quas, minima consequuntur aliquam repudiandae omnis? Dicta, placeat. Placeat, eius alias. Aspernatur eius harum expedita officia molestias explicabo iure, quos earum asperiores velit incidunt nostrum exercitationem nobis perferendis ipsum quidem eaque nam est nemo repellat unde.',
+      header: 'frontend-2',
+      title: 'Title-5',
+      text: 'frontend-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptate error tempore officia unde! Ut dignissimos consequatur, minus quasi, suscipit, voluptate corporis debitis ab tempore perferendis alias? Sint, porro aspernatur! Ipsum possimus nobis non perspiciatis nesciunt pariatur quia quos. Vel, ipsa, modi cumque possimus enim provident dolorum perferendis praesentium commodi itaque a dolorem recusandae ea voluptatem odio, esse aliquid nostrum. Molestias cupiditate blanditiis ut sequi velit corporis deserunt reprehenderit a voluptatem accusantium, modi dicta provident iure corrupti hic vitae. Dolorem illo perferendis omnis asperiores dignissimos neque quos, natus repellat voluptatum.',
       description: 'Description-5',
       picture:
         'https://cdn.pixabay.com/photo/2014/12/27/15/40/office-581131_1280.jpg',
+      // date: String(new Date().getFullYear()),
       date: String(new Date()),
-      link: 'https://deneme5/',
+      link: 'blog',
+      categoryName:"frontend"
     },
     {
       id: 6,
-      title: 'Blog Frontend Kullanımı',
-      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, incidunt? Magnam quas optio sit expedita pariatur repudiandae recusandae porro cumque delectus laudantium quis, fugiat, deleniti praesentium beatae officia consequatur architecto? Nesciunt reiciendis culpa in sunt laudantium ipsum fugiat non sed asperiores atque eveniet illum, natus provident placeat veniam? Nesciunt reiciendis mollitia iusto ea excepturi quas, minima consequuntur aliquam repudiandae omnis? Dicta, placeat. Placeat, eius alias. Aspernatur eius harum expedita officia molestias explicabo iure, quos earum asperiores velit incidunt nostrum exercitationem nobis perferendis ipsum quidem eaque nam est nemo repellat unde.',
+      header: 'backend-2',
+      title: 'Title-6',
+      text: 'Backend-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptate error tempore officia unde! Ut dignissimos consequatur, minus quasi, suscipit, voluptate corporis debitis ab tempore perferendis alias? Sint, porro aspernatur! Ipsum possimus nobis non perspiciatis nesciunt pariatur quia quos. Vel, ipsa, modi cumque possimus enim provident dolorum perferendis praesentium commodi itaque a dolorem recusandae ea voluptatem odio, esse aliquid nostrum. Molestias cupiditate blanditiis ut sequi velit corporis deserunt reprehenderit a voluptatem accusantium, modi dicta provident iure corrupti hic vitae. Dolorem illo perferendis omnis asperiores dignissimos neque quos, natus repellat voluptatum.',
       description: 'Description-6',
       picture:
         'https://cdn.pixabay.com/photo/2014/12/27/15/40/office-581131_1280.jpg',
       date: String(new Date()),
-      link: 'https://deneme6/',
+      link: 'blog',
+      categoryName:"backend"
     },
   ];
 
-  //Constructor
+   //Constructor
+   constructor() {}
 
-  //Method
-}
+   //Method
+   detailPage() {
+     alert('Detail Page');
+     if (window.confirm('Detail sayfasına gitmek mi istiyorsunuz')) {
+       window.location.href = 'blog';
+     } else {
+       alert('Blog Detail Gidilmedi');
+     }
+   } //end detailPage
+ } //end onepa-main-component
