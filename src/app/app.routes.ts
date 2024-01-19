@@ -11,24 +11,17 @@ import { OnePageRegisterComponent } from './one-page-register/one-page-register.
 // Router
 export const routes: Routes = [
 
-    // Index (Home Page: Default)
-    { path: "index", component: OnepageMainComponent },
-    { path: "", redirectTo: "index", pathMatch: "full" },
+  // Index (Home Page: Default)
+  { path: "index", component: OnepageMainComponent },
+  { path: "", redirectTo: "index", pathMatch: "full" },
 
-    // Blog Page
-    { path: "blog", component: OnePageBlogPageComponent },
+  // Blog Page
+  { path: "blog", component: OnePageBlogPageComponent },
 
-    // Login Page
-    { path: "login", component: OnePageLoginComponent },
+  // Login Page
+  { path: "login", component: OnePageLoginComponent },
 
-    // Register Page
-    { path: "register", component: OnePageRegisterComponent },
+  // Register Page
+  { path: "register", component: OnePageRegisterComponent },
 
 ];
-
-/*
-  <a class="btn btn-primary" routerLink="/about">About444</a>
-  <a class="dropdown-item" routerLink="/login" >Login</a>
-   <a class="dropdown-item" routerLink="/register">Register</a>
-   <a class="dropdown-item" routerLink="/blog">Blog</a>
-*/

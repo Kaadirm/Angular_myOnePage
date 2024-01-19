@@ -3,23 +3,22 @@
 <!-- Project Name -->
 <!-- <onePage-projectName></onePage-projectName> -->
 
-<div data-spy="scroll" data-target="#navbar_id">
-  <!-- start Navbar -->
-  <onePage-navbar></onePage-navbar>
-  <!-- end Navbar -->
+<!-- Bütün Sayfalarda Sabit kalacak: Static -->
+<!-- start Navbar -->
+<onePage-navbar></onePage-navbar>
+<!-- end Navbar -->
 
-  <!-- start Header -->
-  <onePage-header></onePage-header>
-  <!-- end Header -->
-</div>
+<!-- Bütün Sayfalarda Sabit kalacak: Static -->
+<!-- start Header -->
+<onePage-header></onePage-header>
+<!-- end Header -->
 
-<!-- start Main -->
-<onePage-main></onePage-main>
-<!-- end Main -->
+<!-- Bütün Sayfalarda Değişken olacaktır kalacak: Dynamics -->
+<!-- start Dynamics Router-->
+<router-outlet></router-outlet>
+<!-- end Dynamics Router-->
 
+<!-- Bütün Sayfalarda Sabit kalacak: Static -->
 <!-- start Footer -->
 <onePage-footer></onePage-footer>
 <!-- end Footer -->
-
-<!-- Router -->
-<router-outlet></router-outlet>
