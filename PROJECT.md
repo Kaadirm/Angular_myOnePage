@@ -6,6 +6,7 @@
 > ng g c onepage-navbar
 > ng g c onePageLogin
 > ng g c onePageRegister
+> ng g c onePageBlogPage
 
 ## AppComponent (Component Eklemek)
 

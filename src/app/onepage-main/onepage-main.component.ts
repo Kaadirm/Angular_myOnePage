@@ -1,6 +1,9 @@
 // Common Module
 import { CommonModule } from '@angular/common';
 
+// Router Link
+import { RouterLink } from '@angular/router';
+
 // Component Core
 import { Component } from '@angular/core';
 
@@ -9,14 +12,14 @@ import { BlogCard } from './BlogCard';
 import { OnePageContent } from './OnePageContent';
 import { BusinessCard } from './BusinessCard';
 @Component({
-  // html Template
+  // Html Selector Template
   selector: 'onePage-main',
 
   // Bu component tek başına çalışsın
   standalone: true,
 
   // import modülümüz
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
 
   // Html5 Url
   templateUrl: './onepage-main.component.html',
