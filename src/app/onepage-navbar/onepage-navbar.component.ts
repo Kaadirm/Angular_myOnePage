@@ -1,7 +1,13 @@
-// Import
+// User
 import { User, userRolles } from './User';
+
 import { CommonModule } from '@angular/common';
+// Common Module
+
 import { Component } from '@angular/core';
+// Core
+
+// Router
 import { RouterLink } from '@angular/router';
 
 // Component
@@ -103,9 +109,10 @@ export class OnepageNavbarComponent {
       //Anasayfa,AboutMe,Blog,Contact  name: Anasayfa, link: http://, fontAwesome
       navbar: [
         { id: 1, name: "anasayfa", link: "/", fontAwesome: "fa-solid fa-house-chimney" },
-        { id: 2, name: "about", link: "#business_id", fontAwesome: "font-2" },
-        { id: 3, name: "blog", link: "#blog_id", fontAwesome: "font-3" },
-        { id: 4, name: "contact", link: "#contact_id", fontAwesome: "font-4" },
+        { id: 2, name: "my work", link: "#business_id", fontAwesome: "font-2" },
+        { id: 3, name: "about", link: "#about_id", fontAwesome: "font-2" },
+        { id: 4, name: "blog", link: "#blog_id", fontAwesome: "font-3" },
+        { id: 5, name: "contact", link: "#contact_id", fontAwesome: "font-4" },
       ],
       search: {
         name: "search",

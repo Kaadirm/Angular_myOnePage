@@ -47,5 +47,5 @@
     "nodemon": "^3.0.2",
     "typescript": "~5.2.2"
   },
-  "proxy":"http://localhost:4444"
+  "proxy": "http://localhost:4444"
 }

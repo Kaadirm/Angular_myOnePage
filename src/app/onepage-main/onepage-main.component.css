@@ -45,7 +45,7 @@ img:hover {
 }
 
 /* ABOUT */
-#about_me_id {
+#about_id {
     background-color: rgb(134, 27, 228);
     color: white !important;
     height: 35rem;
@@ -57,7 +57,7 @@ img:hover {
     background-attachment: fixed;
 }
 
-#about_me_id p {
+#about_id p {
     background-color: black;
     opacity: 0.8;
     padding: 2rem 1rem;
@@ -70,4 +70,5 @@ img:hover {
 /* CONTACT */
 #contact_id {
     background-color: rgb(134, 27, 228);
+    height: 100rem;
 }
