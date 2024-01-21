@@ -8,6 +8,9 @@
 > ng g c onePageRegister
 > ng g c onePageBlogPage
 
+> ## Angular CLI Hazır Bileşenler (Pipeline)
+> ng g pipe      searchBlogFilter
+
 ## AppComponent (Component Eklemek)
 
 ```sh
