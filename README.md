@@ -10,6 +10,15 @@
 
 ---
 
+## VS Kısayollar
+```sh
+ng serve -o
+
+Case Sensitive (JS, Angular,TS,Java)
+Non-Case Sensitive (Html,Css,SQL)
+```
+
+
 ## Kurulumlar
 
 ```sh
@@ -71,6 +80,12 @@
 > ng g directive onepage-pipeline
 > ng g interface onepage-pipeline
 > ng g enum onepage-pipeline
+
+> ng g c => component  
+> ng g i => interface 
+> ng g s => services
+> ng g p => pipeline
+> ng g e => enum
 
 ## Angular Configuration
 
